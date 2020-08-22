@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    background-image: url(https://www.transparenttextures.com/patterns/asfalt-dark.png);
+}
+main{
+    position: relative;
+    top: 20%;
+    height: 20em;
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    background: cornsilk;
+    align-items: center;
+    height: 5em;
+}
+#reset{
+    align-self: flex-end;
+    width:6rem;
+    height: 2rem;
+    background: coral;
+    border: 1px solid rgb(148, 51, 19);
+    border-radius: 5pt;
+    background-image: url(https://www.transparenttextures.com/patterns/arabesque.png);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rebeccapurple;
+    font-size: x-large;
+}
+#board{
+    background: rgba(201, 180, 180, 0.849);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 20em;
+    height: 20em;
+    box-sizing: border-box;
+}
+#title{
+    position: absolute;
+    left:50%;
+    top:0;
+    width: 10em;
+    height: 5rem;
+    margin-left: -5em;
+    text-align: center;
+    line-height: 5rem;
+    font-size: 3em;
+    color: rgb(199, 80, 80);
+    text-shadow: 0.1rem 0.1rem  #600;
+    font-weight: bolder;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#board div:nth-child(3n+3){
+    border-right: 1px solid black;
+    
+}
+#board div:nth-child(n+7){
+    border-bottom: 1px solid black;
+}
+.subBoard{
+    border-top: 1px  solid black;
+    border-left: 1px solid black;
+}
+.description{
+    display: flex;
+    justify-content: flex-end;
+}
+.description .playerOneBoard{
+    font-size: 2em;
+    flex:1 1 50%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.description .playerTwoBoard{
+    font-size: 2em;
+    flex:1 1 50%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.playerOneBoardHover{
+    background: rgb(216, 245, 188);
+}
+.playerOneBoard{
+    background: rgb(153, 235, 76);
+}
+.playerTwoBoard{
+    background: rgb(69, 69, 212);
+}
+.playerTwoBoardHover{
+    background: rgb(140, 140, 211);
+}
+
